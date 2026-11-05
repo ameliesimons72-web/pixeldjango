@@ -1,0 +1,7 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="120" cy="120" r="110" fill="#F3F4F6"/>
+  <circle cx="120" cy="120" r="94" fill="#C1121F"/>
+  <path d="M120 34L143 62L176 58L170 93L199 116L167 128L174 162L140 147L120 179L100 147L66 162L73 128L41 116L70 93L64 58L97 62L120 34Z" fill="#F8FAFC"/>
+  <path d="M120 62L132 82L155 79L145 101L160 121L139 128L133 149L120 134L107 149L101 128L80 121L95 101L85 79L108 82L120 62Z" fill="#C1121F"/>
+  <text x="120" y="206" text-anchor="middle" font-size="18" font-weight="700" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif">ARSENAL</text>
+</svg>

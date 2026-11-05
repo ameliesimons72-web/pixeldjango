@@ -1,0 +1,514 @@
+:root {
+    --arsenal-red: #c1121f;
+    --arsenal-red-deep: #8f0b17;
+    --arsenal-white: #f8fafc;
+    --arsenal-silver: #dfe5ee;
+    --ink: #0b1220;
+    --panel: rgba(10, 17, 28, 0.9);
+    --panel-soft: rgba(17, 24, 39, 0.78);
+    --line: rgba(255, 255, 255, 0.12);
+    --text: #edf2f7;
+    --muted: #d2dae5;
+    --shadow: rgba(3, 7, 18, 0.42);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at top, rgba(193, 18, 31, 0.18), transparent 22%),
+        linear-gradient(135deg, #050b14 0%, #0b1220 40%, #111827 100%);
+    color: var(--text);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--line);
+    background: rgba(7, 12, 19, 0.78);
+    backdrop-filter: blur(10px);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.club-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--arsenal-white);
+}
+
+.club-mark img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--arsenal-white);
+}
+
+.page-shell {
+    padding: 2.5rem 0 4rem;
+}
+
+.panel {
+    background: linear-gradient(180deg, rgba(17, 24, 39, 0.92), rgba(8, 13, 21, 0.94));
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    box-shadow: 0 24px 60px var(--shadow);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2rem;
+    align-items: center;
+    padding: clamp(1.5rem, 3vw, 3rem);
+}
+
+.eyebrow {
+    margin: 0 0 0.8rem;
+    color: #f5b7bb;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.hero-copy h1,
+.story-copy h1,
+.contact-copy h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2.4rem, 5vw, 4.4rem);
+    line-height: 1.05;
+    color: var(--arsenal-white);
+}
+
+.hero-copy p,
+.story-copy p,
+.contact-copy p,
+.card-copy p,
+.pillar-card p,
+.contact-card li {
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 1.04rem;
+}
+
+.chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 1.6rem 0 2rem;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--arsenal-white);
+    border-radius: 999px;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 0.95rem 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, var(--arsenal-red), var(--arsenal-red-deep));
+    color: var(--arsenal-white);
+    box-shadow: 0 14px 30px rgba(193, 18, 31, 0.35);
+}
+
+.btn.secondary {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--line);
+    color: var(--arsenal-white);
+}
+
+.hero-visual .image-frame {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.3rem 1.5rem;
+}
+
+.stats-bar div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.8rem 0.7rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.label {
+    color: #f5b7bb;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+}
+
+.stats-bar strong {
+    font-size: 1.12rem;
+    color: var(--arsenal-white);
+}
+
+.feature-grid,
+.pillars,
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature-card,
+.pillar-card {
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 18px 30px rgba(3, 7, 18, 0.2);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.players-section {
+    margin-top: 3rem;
+}
+
+.section-heading {
+    margin-bottom: 1.4rem;
+}
+
+.section-heading h2,
+.stadium-copy h2 {
+    margin: 0 0 0.5rem;
+    color: var(--arsenal-white);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.section-heading > p:last-child {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.player-card {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: rgba(17, 24, 39, 0.86);
+    box-shadow: 0 18px 30px rgba(3, 7, 18, 0.2);
+}
+
+.player-card > img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    object-position: center 30%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.player-info {
+    position: relative;
+    padding: 1.2rem 1.25rem 0.8rem;
+}
+
+.player-number {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.2rem;
+    color: rgba(255, 255, 255, 0.16);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.player-info h3 {
+    position: relative;
+    margin: 0 0 0.35rem;
+    color: var(--arsenal-white);
+    font-size: 1.3rem;
+}
+
+.player-info p {
+    margin: 0;
+    color: #f5b7bb;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.image-credit {
+    margin: 0;
+    padding: 0.75rem 1.25rem 1rem;
+    color: #aeb8c7;
+    font-size: 0.68rem;
+    line-height: 1.5;
+}
+
+.image-credit a,
+.stadium-home-photo a {
+    color: #f5b7bb;
+}
+
+.stadium-feature {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.stadium-copy p:not(.eyebrow) {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.stadium-home-photo {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.stadium-home-photo img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.stadium-home-photo figcaption {
+    padding: 0.75rem 1rem;
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.6;
+}
+
+.card-copy {
+    padding: 1.4rem 1.2rem 1.6rem;
+}
+
+.card-copy h2,
+.pillar-card h2,
+.contact-card h2 {
+    margin: 0 0 0.7rem;
+    color: var(--arsenal-white);
+}
+
+.story-layout,
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2rem;
+    align-items: center;
+    padding: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.story-visual img,
+.contact-card {
+    border-radius: 22px;
+}
+
+.story-visual img {
+    width: 100%;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.stadium-photo {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.stadium-photo img {
+    border: 0;
+    border-radius: 0;
+}
+
+.stadium-photo figcaption {
+    padding: 0.85rem 1rem;
+    color: var(--muted);
+    font-size: 0.76rem;
+    line-height: 1.6;
+}
+
+.stadium-photo a {
+    color: #f5b7bb;
+}
+
+.pillar-card {
+    padding: 1.5rem;
+}
+
+.about-detail {
+    margin-top: 2rem;
+    padding: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.about-detail h2 {
+    margin: 0 0 0.75rem;
+    color: var(--arsenal-white);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.about-detail > p:last-child {
+    max-width: 850px;
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--line);
+    padding: 1.5rem;
+}
+
+.contact-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.contact-card li + li {
+    margin-top: 0.65rem;
+}
+
+@media (max-width: 860px) {
+    .hero,
+    .story-layout,
+    .contact-layout,
+    .stadium-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-bar,
+    .feature-grid,
+    .pillars,
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .player-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .player-card > img {
+        height: 380px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-copy h1,
+    .story-copy h1,
+    .contact-copy h1 {
+        font-size: 2.4rem;
+    }
+}

@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Arsenal</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <div class="club-mark">
+                <img src="{% static 'images/arsenal-logo.svg' %}" alt="Arsenal crest">
+                <span>Arsenal</span>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'contact' %}" class="active">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-shell container">
+        <section class="contact-layout panel">
+            <div class="contact-copy">
+                <p class="eyebrow">Supporters desk</p>
+                <h1>Stay connected with the club.</h1>
+                <p>
+                    Whether you are a supporter, a partner, or a passionate football fan, we would love to hear from you.
+                    Reach out and join the conversation around Arsenal football and club culture.
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <h2>Get in touch</h2>
+                <ul>
+                    <li>Email: supporters@arsenal.com</li>
+                    <li>Phone: +44 (0)20 7619 5000</li>
+                    <li>Location: London, United Kingdom</li>
+                </ul>
+                <a href="mailto:supporters@arsenal.com" class="btn primary">Send message</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

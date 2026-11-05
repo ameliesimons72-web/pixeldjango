@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Arsenal</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <div class="club-mark">
+                <img src="{% static 'images/arsenal-logo.svg' %}" alt="Arsenal crest">
+                <span>Arsenal</span>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}" class="active">About</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-shell container">
+        <section class="story-layout panel">
+            <div class="story-copy">
+                <p class="eyebrow">Since 1886</p>
+                <h1>A north London club with a world-wide following.</h1>
+                <p>
+                    Arsenal Football Club was founded in 1886 by workers at the Royal Arsenal in Woolwich.
+                    The club moved north of the river to Highbury in 1913, beginning a new chapter in north London.
+                    Today, supporters around the world know the team as Arsenal or the Gunners.
+                </p>
+                <p>
+                    A tradition of expressive football, memorable teams, and strong community ties has shaped the club's
+                    identity across generations. Its red-and-white colours are recognised by fans on matchdays and far beyond London.
+                </p>
+            </div>
+
+            <figure class="story-visual stadium-photo">
+                <img src="{% static 'images/emirates-stadium.jpg' %}" alt="Exterior of Emirates Stadium in London">
+                <figcaption>
+                    Emirates Stadium, photographed by
+                    <a href="https://www.arne-mueseler.com" target="_blank" rel="noopener noreferrer">Arne Müseler</a>.
+                    Licensed under
+                    <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.
+                    <a href="https://commons.wikimedia.org/wiki/File:London_Emirates_Stadium_arsenal.jpg" target="_blank" rel="noopener noreferrer">Source</a>.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="history-grid">
+            <article class="pillar-card">
+                <p class="eyebrow">A landmark season</p>
+                <h2>The Invincibles</h2>
+                <p>In 2003–04, Arsenal completed the 38-match Premier League season unbeaten, an achievement that remains one of English football's defining campaigns.</p>
+            </article>
+            <article class="pillar-card">
+                <p class="eyebrow">Home of the Gunners</p>
+                <h2>Emirates Stadium</h2>
+                <p>Opened in 2006 in Holloway, north London, the stadium is Arsenal's home ground and a central gathering place for supporters on matchday.</p>
+            </article>
+            <article class="pillar-card">
+                <p class="eyebrow">Honours</p>
+                <h2>A record in the cup</h2>
+                <p>Arsenal's men's first team has won 14 FA Cups, more than any other club, alongside league titles and a long history of domestic and European competition.</p>
+            </article>
+        </section>
+
+        <section class="about-detail panel">
+            <p class="eyebrow">More than football</p>
+            <h2>Rooted in the community</h2>
+            <p>
+                Arsenal's story includes the people and neighbourhoods around it. The club's community work supports young people,
+                education, wellbeing, and inclusion through the Arsenal Foundation and local programmes. Generations of players,
+                staff, and supporters have helped make the club's identity bigger than the result on the pitch.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg width="800" height="540" viewBox="0 0 800 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="540" fill="#0B1220"/>
+  <circle cx="160" cy="170" r="90" fill="#C1121F"/>
+  <circle cx="400" cy="170" r="90" fill="#F8FAFC"/>
+  <circle cx="640" cy="170" r="90" fill="#C1121F"/>
+  <path d="M120 360C150 315 198 290 240 290C282 290 330 315 360 360V420H120V360Z" fill="#F8FAFC"/>
+  <path d="M360 360C390 315 438 290 480 290C522 290 570 315 600 360V420H360V360Z" fill="#C1121F"/>
+  <path d="M600 360C630 315 678 290 720 290C762 290 810 315 840 360V420H600V360Z" fill="#F8FAFC"/>
+  <path d="M220 220L190 260L220 300L250 260L220 220Z" fill="#0B1220"/>
+  <path d="M580 220L550 260L580 300L610 260L580 220Z" fill="#0B1220"/>
+  <path d="M400 120V205" stroke="#0B1220" stroke-width="12" stroke-linecap="round"/>
+  <path d="M370 150H430" stroke="#0B1220" stroke-width="12" stroke-linecap="round"/>
+  <text x="400" y="470" text-anchor="middle" font-size="42" font-weight="700" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif">SUPPORT THE GUNNERS</text>
+</svg>

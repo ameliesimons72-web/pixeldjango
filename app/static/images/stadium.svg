@@ -1,0 +1,13 @@
+<svg width="800" height="540" viewBox="0 0 800 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="540" fill="#0B1220"/>
+  <rect x="40" y="50" width="720" height="440" rx="26" fill="#1B2433" stroke="#D8DDE6" stroke-width="4"/>
+  <rect x="120" y="100" width="560" height="320" rx="18" fill="#0F172A" stroke="#D8DDE6" stroke-width="3"/>
+  <path d="M160 250C260 200 310 160 400 160C490 160 540 200 640 250V332C540 382 490 420 400 420C310 420 260 382 160 332V250Z" fill="#173B63"/>
+  <path d="M200 260C270 222 320 205 400 205C480 205 530 222 600 260V320C530 358 480 374 400 374C320 374 270 358 200 320V260Z" fill="#1E4D7A"/>
+  <path d="M360 140V140C360 122 374 108 392 108H408C426 108 440 122 440 140V218H360V140Z" fill="#D8DDE6"/>
+  <path d="M360 212H440V334H360V212Z" fill="#F3F4F6"/>
+  <circle cx="400" cy="282" r="32" fill="#D8DDE6"/>
+  <path d="M400 250V314M368 282H432" stroke="#0B1220" stroke-width="8" stroke-linecap="round"/>
+  <rect x="120" y="100" width="560" height="320" rx="18" stroke="#C1121F" stroke-width="4"/>
+  <text x="400" y="470" text-anchor="middle" font-size="42" font-weight="700" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif">EMIRATES STADIUM</text>
+</svg>

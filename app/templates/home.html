@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal FC</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <div class="club-mark">
+                <img src="{% static 'images/arsenal-logo.svg' %}" alt="Arsenal crest">
+                <span>Arsenal</span>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'home' %}" class="active">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-shell container">
+        <section class="hero panel">
+            <div class="hero-copy">
+                <p class="eyebrow">North London pride</p>
+                <h1>Red and white. Relentless and ready.</h1>
+                <p>
+                    Welcome to the new home of Arsenal passion, tradition, and ambition.
+                    From the Emirates to the fan base around the world, this club lives for the next big moment.
+                </p>
+                <div class="chip-row">
+                    <span class="chip">Premier League</span>
+                    <span class="chip">European Icons</span>
+                    <span class="chip">The Gunners</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="{% url 'about' %}" class="btn primary">About the club</a>
+                    <a href="{% url 'contact' %}" class="btn secondary">Supporters desk</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="image-frame">
+                    <img src="{% static 'images/arsenal.webp' %}" alt="Arsenal squad image">
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-bar panel">
+            <div>
+                <span class="label">Founded</span>
+                <strong>1886</strong>
+            </div>
+            <div>
+                <span class="label">Home</span>
+                <strong>Emirates Stadium</strong>
+            </div>
+            <div>
+                <span class="label">Titles</span>
+                <strong>13 League</strong>
+            </div>
+            <div>
+                <span class="label">Captain</span>
+                <strong>Martin Ødegaard</strong>
+            </div>
+        </section>
+
+        <section class="players-section">
+            <div class="section-heading">
+                <p class="eyebrow">The Gunners</p>
+                <h2>Meet the team</h2>
+                <p>Get to know some of the players and the head coach driving Arsenal forward.</p>
+            </div>
+            <div class="player-grid">
+                <article class="player-card">
+                    <img src="{% static 'images/bukayo-saka.jpg' %}" alt="Bukayo Saka">
+                    <div class="player-info">
+                        <span class="player-number">07</span>
+                        <h3>Bukayo Saka</h3>
+                        <p>Forward</p>
+                    </div>
+                    <p class="image-credit">
+                        Photo: <a href="https://commons.wikimedia.org/wiki/File:1_bukayo_saka_arsenal_2025_(cropped).jpg" target="_blank" rel="noopener noreferrer">Chensiyuan</a>
+                        / <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+                    </p>
+                </article>
+
+                <article class="player-card">
+                    <img src="{% static 'images/martin-odegaard.jpg' %}" alt="Martin Ødegaard wearing an Arsenal shirt">
+                    <div class="player-info">
+                        <span class="player-number">08</span>
+                        <h3>Martin Ødegaard</h3>
+                        <p>Midfielder · Captain</p>
+                    </div>
+                    <p class="image-credit">
+                        Photo: <a href="https://commons.wikimedia.org/wiki/File:Arsenal_v_Everton_-_52223349030_(Martin_%C3%98degaard,_capit%C3%A3o_do_Arsenal).jpg" target="_blank" rel="noopener noreferrer">Maryland GovPics</a>
+                        / <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+                    </p>
+                </article>
+
+                <article class="player-card">
+                    <img src="{% static 'images/declan-rice.jpg' %}" alt="Declan Rice wearing Arsenal's number 41 shirt at Emirates Stadium">
+                    <div class="player-info">
+                        <span class="player-number">41</span>
+                        <h3>Declan Rice</h3>
+                        <p>Midfielder</p>
+                    </div>
+                    <p class="image-credit">
+                        Photo: <a href="https://commons.wikimedia.org/wiki/File:2024_Emirates_Cup_-_Declan_Rice.jpg" target="_blank" rel="noopener noreferrer">Timmy96</a>
+                        / <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a>
+                    </p>
+                </article>
+
+                <article class="player-card">
+                    <img src="{% static 'images/david-raya.jpg' %}" alt="Arsenal goalkeeper David Raya">
+                    <div class="player-info">
+                        <span class="player-number">22</span>
+                        <h3>David Raya</h3>
+                        <p>Goalkeeper</p>
+                    </div>
+                    <p class="image-credit">
+                        Photo: <a href="https://commons.wikimedia.org/wiki/File:David_Raya_in_2025_(cropped).jpg" target="_blank" rel="noopener noreferrer">Biso</a>
+                        / <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+                    </p>
+                </article>
+
+                <article class="player-card staff-card">
+                    <img src="{% static 'images/mikel-arteta.png' %}" alt="Mikel Arteta coaching Arsenal">
+                    <div class="player-info">
+                        <h3>Mikel Arteta</h3>
+                        <p>Head Coach</p>
+                    </div>
+                    <p class="image-credit">
+                        Photo: <a href="https://commons.wikimedia.org/wiki/File:Mikel_Arteta_2021_(cropped).png" target="_blank" rel="noopener noreferrer">Prime Video AU &amp; NZ</a>
+                        / <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="stadium-feature panel">
+            <div class="stadium-copy">
+                <p class="eyebrow">Our home</p>
+                <h2>Emirates Stadium</h2>
+                <p>
+                    Since opening in 2006, Emirates Stadium has been the home of Arsenal in Holloway, north London.
+                    On matchday, tens of thousands of supporters fill the stands to back the team.
+                </p>
+                <a href="{% url 'about' %}" class="btn secondary">Discover the club</a>
+            </div>
+            <figure class="stadium-home-photo">
+                <img src="{% static 'images/emirates-stadium.jpg' %}" alt="Emirates Stadium in London on matchday">
+                <figcaption>
+                    Photo: <a href="https://www.arne-mueseler.com" target="_blank" rel="noopener noreferrer">Arne Müseler</a>
+                    / <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+                    · <a href="https://commons.wikimedia.org/wiki/File:London_Emirates_Stadium_arsenal.jpg" target="_blank" rel="noopener noreferrer">Source</a>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
